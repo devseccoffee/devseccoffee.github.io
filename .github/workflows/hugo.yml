@@ -45,7 +45,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Build
-        run: hugo
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
